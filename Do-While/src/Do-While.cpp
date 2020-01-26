@@ -3,7 +3,7 @@
 // Author      : Ray Andrade
 // Version     :
 // Copyright   : 
-// Description : Hello World in C++, Ansi-style
+// Description : C++Tutorial for Beginners 17 - The Do-While Loops
 //============================================================================
 
 #include <iostream>
