@@ -10,6 +10,4 @@
 
 void doSomething();
 
-
-
 #endif /* UTILS_H_ */
