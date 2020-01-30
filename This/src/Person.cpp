@@ -8,19 +8,14 @@
 #include "Person.h"
 #include <sstream>
 
-Person::Person() {
-	age = 0;
-	name = "";
+//Person::Person() {
+	// age = 0;
+	// name = "";
+//}
 
-}
+//Person::Person(string name, int age):name(name),age(age) {
 
-Person::Person(string name, int age){
-	this -> age = age;
-	this -> name = name;
-
-	cout << "MEM loc:" << this << endl;
-
-}
+//}
 
 string Person::toString(){
 	stringstream ss;
