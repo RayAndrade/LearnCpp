@@ -15,6 +15,7 @@ private:
 
 public:
 	Animal() { cout << "being created" << endl; };
+
 	Animal(const Animal &other): name(other.name) { other.speak(); cout << "animal being created via copy" << endl; };
 
 	void setName(string name){ this->name = name; };
