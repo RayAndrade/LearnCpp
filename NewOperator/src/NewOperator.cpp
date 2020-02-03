@@ -4,6 +4,7 @@
 // Version     :
 // Copyright   : 
 // Description : C++Tutorial for Beginners 46 - The New Operator; Allocating Memory in C++
+//				 C++Tutorial for Beginners 47 - Returning Objects from Functions
 //============================================================================
 
 #include <iostream>
@@ -37,33 +38,18 @@ public:
 };
 
 Animal *createAnimal(){
-	Animal *a = new Animal;
-	a->setName("Tom");
+
+	Animal *pAnimal =  new Animal();
+	//Animal a;
+	pAnimal->setName("Bert");
+	return pAnimal;
 }
 
 int main() {
 
-	Animal cat;
-	cat.setName("Felix");
-	cat.speak();
-
-	Animal *pCat1 = new Animal();
-	(*pCat1).setName("man-do");
-	(*pCat1).speak();
-
-	Animal *pCat2 = new Animal();
-	pCat2->setName("Mat");
-	pCat2->speak();
-
-	cout << sizeof(pCat2) << endl;
-	// same size of long
-	cout << sizeof(long) << endl;
-
-
-	delete pCat2;
-	//pCat2 = NULL;
-
-
+	Animal *pFrog = createAnimal();
+	pFrog->speak();
+	delete pFrog;
 
 	return 0;
 }

@@ -7,9 +7,10 @@
 //============================================================================
 
 #include <iostream>
-using namespace std;
+
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	std::cout << "build w/o std" << std::endl;
+	std::cin.get();
 	return 0;
 }
