@@ -4,11 +4,29 @@
 // Version     :
 // Copyright   : 
 // Description : C++Tutorial for Beginners 20 - Arrays
+//               C++Tutorial for Beginners 49 - Arrays and Functions
 //============================================================================
 
 #include <iostream>
 using namespace std;
 
+void show1(const int nElements, string *texts){
+	for(int i=0; i < nElements; i++){
+		cout << texts[1] << endl;
+	}
+}
+
+void show2(const int nElements, string *texts){
+	for(int i=0; i < nElements; i++){
+		cout << texts[i] << endl;
+	}
+}
+
+void show3(string (&texts)[3]){
+	for(int i=0; i < sizeof(texts)/sizeof(string); i++){
+		cout << texts[i] << endl;
+	}
+}
 int main() {
 
 	cout << "Array if ints:" << endl;
@@ -48,10 +66,16 @@ int main() {
 	cout << "=============" << endl;
 
 	string texts[] = {"apple", "orange", "banna"};
+	cout << "=============" << endl;
 
 	for(int i = 0; i < 3; i++){
 		cout << texts[i] << endl;
 	}
+	show2(3, texts);
+
+	cout << "=============" << endl;
+
+	show3(texts);
 
 	return 0;
 }
