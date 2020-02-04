@@ -5,7 +5,7 @@
 // Copyright   : 
 // Description : C++Tutorial for Beginners 46 - The New Operator; Allocating Memory in C++
 //				 C++Tutorial for Beginners 47 - Returning Objects from Functions
-//				 C++Tutorial for Beginners 48 - Allocating Memory
+//
 //============================================================================
 
 #include <iostream>
